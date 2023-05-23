@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chester_Milli Restaurant</title>
+    <link rel="shortcut icon" href="/Frontend/Frontend Milestone project/Images/ChesterOne.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="/Frontend/Boostrap/bootstrap.css"> -->
+
+    <!-- Boostrap nav url -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- /////// -->
+
+    <!-- <link rel="stylesheet" href="/Frontend/Boostrap/bootstrap.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="fooddeliveryapp.css">
+    <link rel="stylesheet" href="contactUs.css">
+
+</head>
+<body>
+      <!-- Nav Bar -->
+      <nav class="mynavBar navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="/Frontend/Frontend Milestone project/Images/ChesterOne.png" alt="">
+            </div>
+            <div class="cart">
+                <a href="cart.html"><i class='bx bxs-cart'></i></a><p id="count">0</p>
+            </div>
+
+          <button class="navbar-toggler navbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 items">
+              <li class="home nav-item">
+                <a id="home" class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="menu" class="nav-link active" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a id="aboutUs" class="nav-link active" href="aboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a id="contactUs" class="nav-link active" href="contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="navInput" type="search" placeholder="Search" aria-label="Search">
+              <button class="navbtnTwo btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <!-- Background Changer //////////////////////////////////// -->
+        <div class="container-fluid backgroundChanger">
+          <button id="background" type="button"><i class='backgroundNew bx bxs-sun' ></i></button>
+          <!-- <div class="white"></div>
+          <div class="darkMode"></div> -->
+        </div>
+
+
+        <!-- Contact Us ////////////////////////////////////////////// -->
+        <div class="contactUs">
+            <h1>Contact Us</h1>
+            <div class="container contactUsFlex">
+              <div class="contactUsPartOne">
+                <div class="generalInfo">
+                  <h3>General Information</h3>
+                </div>
+                <div class="contactUspara">
+                  <p>For office hours and location, or to speak with a director, <a href="">click here.</a> For general inquiries, please send us a message or use the contact information below. We look forward to hearing from you!</p>
+                </div>
+                <div class="contactUsDetails">
+                  <p class="firstPar">Toll Free: +2348034956084</p>
+                  <p class="firstPara"><a href="">chestermilli@gmail.com</a></p>
+                </div>
+              </div>
+  
+            <form action="" class="contactUsForm">
+              <div class="lableName">
+                <label for="name">Name</label>
+              </div>
+              <div class="input">
+                <input type="text" id="name" placeholder="Enter FullName">
+              </div> <br>
+  
+              <div class="labelEmail">
+                <label for="email">Email</label>
+              </div>
+              <div class="input">
+                <input type="email" name="email" id="email" placeholder="Enter Email Address">
+              </div> <br>
+  
+              <div class="textArea">
+               <textarea name="" id="textArea" cols="30" rows="10" placeholder="Enter your message"></textarea>
+              </div> <br>
+  
+              <div>
+                <button class="contactUsbtn" type="button">Send Message</button>
+              </div>
+            </form>
+            </div>
+          </div>
+          <hr class="container hrOne" style="color: rgba(51, 51, 51, 0.651);">
+          <hr class="container hrTwo" style="color: white;">
+        </main>
+
+
+          <footer>
+            <div class="container footerFlex">
+              <div class="services">
+                <h5>Services</h5>
+                <p><a href="">Home</a></p>
+                <p><a href="">Menu</a></p>
+                <p><a href="">About Us</a></p>
+                <p><a href="">Contact Us</a></p>
+                <p><a href="">Become a Vendor</a></p>
+              </div>
+    
+              <div class="support">
+                <h5>Support</h5>
+                <p><a href="">How to Order</a></p>
+                <p><a href="">Where we deliver</a></p>
+                <p><a href="">FAQs</a></p>
+                <p><a href="">Contact</a></p>
+                <p><a href="">Terms and Conditions</a></p>
+                <p><a href="">Privacy Policy</a></p>
+              </div>
+    
+              <div class="propertyManagement">
+                <h5>Property Management</h5>
+                <p><span><i class='bx bx-map'></i></span> Flat no B-5, plot 06 Block SW(H)-California</p>
+                <p><span><i class='bx bx-phone'></i></span> +2348034956084</p>
+                <p><span><i class='bx bx-envelope'></i></span> aliachiemena@gmail.com</p>
+                <p><span><i class='bx bxs-time'></i></span> Mon - Sat: 7am - 5pm, Sun: 10am - 4pm</p>
+                <div class="socialHandles">
+                  <a href=""><span><i class='bx bxl-youtube'></i></span></a>
+                  <a href=""><span><i class='bx bxl-facebook-circle'></i></span></a>
+                  <a href=""><span><i class='bx bxl-twitter'></i></span>
+                  </a>
+                  <a href=""><span><i class='bx bxl-instagram-alt' ></i><span></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+    
+          <script>
+            document.getElementById('viewFullMenubtn').addEventListener('click', e=>{
+              window.location.href = "./menu.html"
+            })
+          </script>
+    
+        <script src="fooddeliveryapp.js"></script>
+        <script src="app.js"></script>
+        <script src="payment.js"></script>
+    </body>
+    </html>

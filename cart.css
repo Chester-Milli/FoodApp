@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root{
+    --mainColor: rgb(240,69,43);
+    --mainAlt: rgb(199, 50, 27);
+    --secColor: rgb(86,141,51);
+    --btnShape: 30px 30px 2px;
+}
+
+
+.foodItemContainer{
+    max-width: 650px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    /* padding-bottom: 20px; */
+}
+
+.foodItemHeader{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.foodItemTitle{
+    width: 100%;
+    text-align: center;
+}
+
+.price{
+    display: flex;
+    width: 15%;
+    align-items: center;
+}
+
+.quantity{
+    display: flex;
+    width: 30%;
+    /* border-bottom: 4px solid lightgray; */
+    align-items: center;
+}
+
+.total{
+    display: flex;
+    width: 10%;
+    /* border-bottom: 4px solid lightgray; */
+    align-items: center;
+}
+
+.foodItemContainer .foodItems{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+
+/* .foodItemHeader{
+    display: flex;
+} */
+
+
+/* Images and contents from DataBase ////////////////////////// */
+.shoppedItemsClose{
+    font-size: 22px;
+    border-radius: 50%;
+    color: var(--mainColor);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.imageJsContainer{
+    width: 100%;
+    /* background-color: rgba(223, 216, 216, 0.137); */
+    padding: 5px;
+    height: 100%;
+}
+
+
+
+.imageJs{
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--mainColor);
+    border-radius: 50%;
+}
+
+.cartPrice{
+    /* color: var(--mainColor);
+    font-weight: 650; */
+    margin-left: 15px;
+}
+
+
+/* Increase and decrease icon buttons  */
+/* .addMinusIcons{
+    width: 80%;
+    padding: 20px;
+} */
+
+.shoppedItemsAdd{
+    font-size: 22px;
+    border-radius: 50%;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+.shoppedItemsMinus{
+    font-size: 22px;
+    border-radius: 50%;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+/* .totalCart{
+    font-size: 1.2rem;
+} */
+
+
+/* Styling the total cost */
+.foodItemsTotalContainer{
+    /* margin-bottom: -230px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.foodItemsTotalTitle{
+    width: 30%;
+}
+
+.payFood{
+    text-align: right;
+    margin-top: 5px;
+}
+
+.payFoodbtn{
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    border-radius: 30px 30px 2px;
+    transition: 300ms;
+}
+
+.payFoodbtn:hover{
+    transition: 300ms;
+    background-color: white;
+    border: 3px solid var(--mainColor);
+    color: black;
+    font-weight: 600;
+}
+
+
+
+
+
+/* Form payment ///////////////////////// */
+.formHidden{
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.575);
+    animation: Chester 0.6s;
+    overflow-y: hidden;
+    padding-left: 3%;
+    color: white;
+}
+
+
+@keyframes Chester{
+    from{
+        transform: scale(0.5);
+        width: 0%;
+    }
+    to{
+        transform: scale(1);
+        width: 50%;
+    }
+}
+
+.paymentForm{
+    /* backdrop-filter: blur(10px);
+    background-color: rgba(241, 241, 241, 0.575); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.paymentForm>.formPart>div{
+    padding: 10px;
+}
+
+.paymentForm>.formPart{
+    width: 45%;
+}
+
+.paymentForm input{
+    width: 300px;
+}
+
+
+.invoice{
+    display: non;
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+    .foodItemContainer .foodItems{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .foodItemContainer .foodItems{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0px 15px;
+    }
+
+    .payFoodbtn{
+        width: 100%;
+        border-radius: 30px 30px;
+    }
+
+    .paymentForm{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .foodItemContainer .foodItems{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
+    .payFood{
+        padding: 0px 10px;
+    }
+
+    .payFoodbtn{
+        width: 100%;
+        border-radius: 30px 30px;
+    }
+
+    .paymentForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paymentForm input{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .foodItemContainer .foodItems{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .foodItemsTotalContainer{
+        margin-bottom: 0px;
+    }
+
+
+    .payFood{
+        padding: 0px 10px;
+    }
+    
+    .payFoodbtn{
+        width: 100%;
+        border-radius: 30px 30px;
+    }
+}

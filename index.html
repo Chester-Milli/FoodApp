@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chester_Milli Restaurant</title>
+    <link rel="shortcut icon" href="Images/ChesterOne.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="/Frontend/Boostrap/bootstrap.css"> -->
+
+    <!-- Boostrap nav url -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- /////// -->
+
+    <!-- <link rel="stylesheet" href="/Frontend/Boostrap/bootstrap.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="fooddeliveryapp.css">
+
+</head>
+<body>
+      <!-- Nav Bar -->
+      <nav class="mynavBar navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="Images/ChesterOne.png" alt="">
+            </div>
+            <div class="cart">
+                <a href="cart.html"><i class='bx bxs-cart'></i></a><p id="count">0</p>
+            </div>
+
+          <button class="navbar-toggler navbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 items">
+              <li class="home nav-item">
+                <a id="home" class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="menu" class="nav-link active" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a id="aboutUs" class="nav-link active" href="aboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a id="contactUs" class="nav-link active" href="contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="navInput" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+              <button class="navbtnTwo btn btn-outline-success" type="submit" id="search">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <aside>
+        <div class="aside">
+          <div id="root"></div>
+
+          <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+              <h4>Total</h4>
+              <h5>&#8358 0.00</h5>
+            </div>
+          </div>
+        </div>
+      </aside> -->
+
+      <!-- main body -->
+      <main>
+        <!-- Background Changer //////////////////////////////////// -->
+        <!-- <div class="radio-btn">
+          <div class="radio-inner">  </div>
+        </div> -->
+
+  
+        <div class="container-fluid backgroundChanger">
+          <button id="background" type="button"><i class='backgroundNew bx bxs-sun' ></i></button>
+          <!-- <div class="white"></div>
+          <div class="darkMode"></div> -->
+        </div>
+
+
+        <!-- Enjoy Delicious Meal ///////////////////////////////////// -->
+        <div class="container-fluid enjoyDeliciousMeal">
+          <div class="container enjoyDelicious">
+            <div class="container deliciousMeal">
+              <h1>Enjoy <span> Delicious Food </span>In Your Healthy Life</h1> <br>
+
+              <div class="container foodBrings">
+                <p>Food brings people together on many different levels. It’s nourishment of the soul and body; it’s truly love. Good food, makes a healthy living.</p>
+              </div>
+            </div><br>
+  
+            <div class="container imageContainer">
+              <img src="Images/mangoSoup.jpg" alt="">
+            </div>
+          </div>
+          <div class="container">
+            <button class="deliciousbtn" id="displayFoodMenu" type="button">View Menu <i class='bx bx-right-arrow-alt'></i></button>
+          </div>
+        </div> <br>
+
+
+
+        <!-- <div class="containe viewMenu ">
+          <div class="viewMenuFlex">    
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="/Frontend/Frontend Milestone project/Images/Okro.jpg" alt="">
+                </div><br>
+                <div class="foodName">
+                  <h4>Okra Soup</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <p class="foodPrice">&#8358 5000</p>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+            </div>
+            </div> -->
+
+            <div class="one">
+              <div class="two">
+              </div>
+            </div>
+            
+
+        <!-- View Menu //////////////////////////////////////// -->
+        <div class="viewMenu showFoodMenu">
+          <div class="hideFoodMenu" id="hideFoodMenu">
+            <i class='bx bx-x'></i>
+          </div>
+          <div class="viewMenuFlex">    
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="Images/Okro.jpg" alt="">
+                </div><br>
+                <div class="foodName">
+                  <h4>Okra Soup</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <div class="viewMenuAdd">
+                      <p class="foodPrice">&#8358 3000</p>
+                      <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="Images/riceandchicken.jpg" alt="">
+                </div><br>
+                <div class="foodName">
+                  <h4>Jellof Rice</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <div class="viewMenuAdd">
+                      <p class="foodPrice">&#8358 2500</p>
+                      <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+            
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="Images/Beans-and-Plantain.jpg" alt="">
+                </div> <br>
+                <div class="foodName">
+                  <h4>Beans and Dodo</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <div class="viewMenuAdd">
+                      <p class="foodPrice">&#8358 1500</p>
+                      <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="Images/Ofe-Nsala.jpg" alt="">
+                </div><br>
+                <div class="foodName">
+                  <h4>Ofe Nsala (White Soup)</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <div class="viewMenuAdd">
+                      <p class="foodPrice">&#8358 4000</p>
+                      <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="Images/spaghetti.jpg" alt="">
+                </div> <br>
+                <div class="foodName">
+                  <h4>Spaghetti</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <div class="viewMenuAdd">
+                      <p class="foodPrice">&#8358 2000</p>
+                      <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+             
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="Images/tomato-stew.jpg" alt="">
+                </div> <br>
+                <div class="foodName">
+                  <h4>Tomato Stew and Rice</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <div class="viewMenuAdd">
+                      <p class="foodPrice">&#8358 2000</p>
+                      <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+             
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="Images/mangoSoup.jpg" alt="">
+                </div> <br>
+                <div class="foodName">
+                  <h4>Mango Soup</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <div class="viewMenuAdd">
+                      <p class="foodPrice">&#8358 3200</p>
+                      <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+             
+            <figure class="viewMenuFigure">
+              <div class="viewMenuContainerFlex">
+                <div class="imageholder">
+                  <img src="Images/bangasoup.jpg" alt="">
+                </div> <br>
+                <div class="foodName">
+                  <h4>Banga Soup</h4>
+                </div>
+                <div class="foodArticle">
+                  <div class="foodArticleFlex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, pariatur beatae.</p>
+                    <div class="viewMenuAdd">
+                      <p class="foodPrice">&#8358 2500</p>
+                      <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </figure>
+          </div>
+          <div class="viewMenubutton">
+            <button class="viewMenubtn deliciousbtn" id="viewFullMenubtn" type="button">View Full menu</button>
+          </div>
+          </div>
+        </div>
+
+
+
+        <!-- Popular Dishes /////////////////////////////////// -->
+        <div class="container popularDishes">
+          <div class="popularDishesmain">
+            <div class="ourDishes">
+              <h1>Our <span>Popular</span> Dishes</h1>
+              <p>-- <i class='bx bxs-bowl-hot'></i> --</p>
+              <h5>Healthy food make people happy. We are here to serve you better with our dishes. Here are some special dishes for you.</h5>
+            </div><br>
+
+            <div class="dishHolder">
+                <figure class="dishImageContainer">
+                  <div class="imageHolder">
+                    <img src="Images/ohasoup.webp" alt="">
+                  </div> <br>
+                
+                  <figcaption>
+                    <h4>Oha Soup</h4>
+                    <div class="heart"><i id="heart" class='bx bx-heart'></i></div>
+                  </figcaption>
+
+                  <div class="starRating">
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    </a>
+                  </div> <br>
+
+                  <div class="priceAddtoCart">
+                    <p>&#8358 3200</p>
+                    <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                  </div>
+                </figure> 
+
+                <figure class="dishImageContainer">
+                  <div class="imageHolder">
+                    <img src="Images/friedrice-chicken.jpg" alt="">
+                  </div> <br>
+                
+                  <figcaption>
+                    <h4>Fried Rice & Chicken</h4>
+                    <div class="heart"><i id="heart" class='bx bx-heart'></i></div>
+                  </figcaption>
+
+                  <div class="starRating">
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                  </div> <br>
+
+                  <div class="priceAddtoCart">
+                    <p>&#8358 5000</p>
+                    <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                  </div>
+                </figure>
+
+                <figure class="dishImageContainer">
+                  <div class="imageHolder">
+                    <img src="Images/poundedyamandegusi.jpg" alt="">
+                  </div> <br>
+                
+                  <figcaption>
+                    <h4>Pounded Yam & Egusi</h4>
+                    <div class="heart"><i id="heart" class='bx bx-heart'></i></div>
+                  </figcaption>
+
+                  <div class="starRating">
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                    <a href=""><i class='bx bx-star'></i></a>
+                  </div> <br>
+
+                  <div class="priceAddtoCart">
+                    <p>&#8358 3200</p>
+                    <p><i class='viewMenuAddIcon bx bx-plus'></i></p>
+                  </div>
+                </figure>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- special Offer ////////////////////////////////// -->
+        <div class="container-fluid mySpecialOffer">
+          <div class="container specialOffer">
+            <div class="imageHolder">
+              <img src="Images/abacha.jpeg" alt="">
+            </div>
+
+            <div class="onlyFor">
+              <p>Our delicious<span class="vegetables"> African Salad</span></p>
+              <p>Regular Price: <br> <span class="price">&#8358 2000</span></p>
+              <p>Offer Price: <br> <span class="price">&#8358 2000</span></p>
+            </div>
+
+            <div class="discount">
+              <div>
+                <h3>Special Offer</h3>
+              </div>
+              <div class="discount50">
+                <h1>50% OFF</h1>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla architecto dolore possimus quas voluptate dolorum cum quaerat. Laudantium doloribus debitis perspiciatis doloremque, ipsum officiis quisquam earum nesciunt fugit voluptates.</p>
+              </div>
+              <div>
+                <button class="discountbtn" type="button">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Contact Us ////////////////////////////////////////////// -->
+        <div class="contactUs">
+          <h1>Contact Us</h1>
+          <div class="container contactUsFlex">
+            <div class="contactUsPartOne">
+              <div class="generalInfo">
+                <h3>General Information</h3>
+              </div>
+              <div class="contactUspara">
+                <p>For office hours and location, or to speak with a director, <a href="">click here.</a> For general inquiries, please send us a message or use the contact information below. We look forward to hearing from you!</p>
+              </div>
+              <div class="contactUsDetails">
+                <p class="firstPar">Toll Free: +2348034956084</p>
+                <p class="firstPara"><a href="">chestermilli@gmail.com</a></p>
+              </div>
+            </div>
+
+          <form action="" class="contactUsForm">
+            <div class="lableName">
+              <label for="name">Name</label>
+            </div>
+            <div class="input">
+              <input type="text" id="name" placeholder="Enter FullName">
+            </div> <br>
+
+            <div class="labelEmail">
+              <label for="email">Email</label>
+            </div>
+            <div class="input">
+              <input type="email" name="email" id="email" placeholder="Enter Email Address">
+            </div> <br>
+
+            <div class="textArea">
+             <textarea name="" id="textArea" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            </div> <br>
+
+            <div>
+              <button class="contactUsbtn" type="button">Send Message</button>
+            </div>
+          </form>
+          </div>
+        </div>
+        <hr class="container hrOne" style="color: rgba(51, 51, 51, 0.651);">
+        <hr class="container hrTwo" style="color: white;">
+
+
+        <!-- Newsletter /////////////////////////////////////////////// -->
+        <div class="newsletter">
+          <div class="container newsletterFlex">
+            <div class="newsletterSubscribe">
+              <h4><span>Subscribe</span> to our Newsletter</h4>
+              <p>Recieve information about new meals and promotions</p>
+            </div>
+
+            <div class="newsletterButton">
+              <div class="newsletterButtonDisplay">
+                <input type="text" placeholder="Email Address" id="newsletterInput">
+                <!-- <div class="newsletterSend"><i id="newsletterSend" class='bx bxs-send'></i></div> -->
+                <button class="newsletterbtn" type="button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container footerFlex">
+          <div class="services">
+            <h5>Services</h5>
+            <p><a href="">Home</a></p>
+            <p><a href="">Menu</a></p>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Contact Us</a></p>
+            <p><a href="">Become a Vendor</a></p>
+          </div>
+
+          <div class="support">
+            <h5>Support</h5>
+            <p><a href="">How to Order</a></p>
+            <p><a href="">Where we deliver</a></p>
+            <p><a href="">FAQs</a></p>
+            <p><a href="">Contact</a></p>
+            <p><a href="">Terms and Conditions</a></p>
+            <p><a href="">Privacy Policy</a></p>
+          </div>
+
+          <div class="propertyManagement">
+            <h5>Property Management</h5>
+            <p><span><i class='bx bx-map'></i></span> Flat no B-5, plot 06 Block SW(H)-California</p>
+            <p><span><i class='bx bx-phone'></i></span> +2348034956084</p>
+            <p><span><i class='bx bx-envelope'></i></span> aliachiemena@gmail.com</p>
+            <p><span><i class='bx bxs-time'></i></span> Mon - Sat: 7am - 5pm, Sun: 10am - 4pm</p>
+            <div class="socialHandles">
+              <a href=""><span><i class='bx bxl-youtube'></i></span></a>
+              <a href=""><span><i class='bx bxl-facebook-circle'></i></span></a>
+              <a href=""><span><i class='bx bxl-twitter'></i></span>
+              </a>
+              <a href=""><span><i class='bx bxl-instagram-alt' ></i><span></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        document.getElementById('viewFullMenubtn').addEventListener('click', e=>{
+          window.location.href = "./menu.html"
+        })
+      </script>
+
+    <script src="fooddeliveryapp.js"></script>
+    <script src="app.js"></script>
+    <script src="payment.js"></script>
+</body>
+</html>

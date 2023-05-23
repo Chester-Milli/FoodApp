@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root{
+    --mainColor: rgb(240,69,43);
+    --mainAlt: rgb(199, 50, 27);
+    --secColor: rgb(86,141,51);
+    --btnShape: 30px 30px 2px;
+}
+
+/* Nav Bar ///////////////////////////////////// */
+#home:hover, #aboutUs:hover, #contactUs:hover{
+    color: var(--mainColor);
+}
+
+#home, #aboutUs, #contactUs{
+    font-size: 1.1rem;
+    font-weight: 650;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+#home{
+    color: black;
+}
+
+#menu{
+    color: var(--mainColor);
+    font-size: 1.1rem;
+    font-weight: 650;
+}
+
+#menu:hover{
+    color: black;
+    text-decoration: none;
+    transition: 650ms;
+}
+
+
+
+
+
+/* View Menu ////////////////////////////////////// */
+.hideFoodMenu{
+    display: block;
+}
+
+.viewMenuContainerFlex img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    /* box-shadow: 3px 3px 5px grey, 3px 3px 5px grey; */
+}
+
+.viewMenu .foodName>h4, .viewMenu .foodArticleFlex>p{
+    color: grey;
+    font-weight: 650;
+}
+
+.viewMenuContainerFlex .foodArticleFlex>.viewMenuAdd .foodPrice{
+    /* color: var(--mainColor); */
+    font-weight: 650;
+    line-height: 2;
+    color: var(--mainColor);
+}
+
+
+@media screen and (max-width:476px) {
+    .viewMenuContainerFlex img{
+        width: 150px ;
+        height: 150px;
+    }
+}

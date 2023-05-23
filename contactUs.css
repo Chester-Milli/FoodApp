@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root{
+    --mainColor: rgb(240,69,43);
+    --mainAlt: rgb(199, 50, 27);
+    --secColor: rgb(86,141,51);
+    --btnShape: 30px 30px 2px;
+}
+
+/* Nav Bar ///////////////////////////////////// */
+#contactUs:hover, #menu:hover, #aboutUs:hover, #home.hover{
+    color: var(--mainColor);
+}
+
+#menu, #aboutUs, #contactUs, #home{
+    font-size: 1.1rem;
+    font-weight: 650;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+#home{
+    color: black;
+}
+
+#contactUs{
+    color: var(--mainColor);
+    font-size: 1.1rem;
+    font-weight: 650;
+}
+
+#contactUs:hover{
+    color: black;
+    text-decoration: none;
+    transition: 650ms;
+}
