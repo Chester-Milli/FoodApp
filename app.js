@@ -217,7 +217,7 @@ function displayCart(){
                 <div class="foodDetails">
                     <div><span class="foodName"> ${items.name}</span></div>
                 </div>
-                <div><span>Price <span class="cartPrice"> &#8358 ${items.price}</span></span>
+                <div><span>Price <span class="cartPrice"> ${items.price}</span></span>
             </div>
             <div class="addMinusIcons quantity">
                 <i class='shoppedItemsAdd bx bxs-plus-circle'></i> &nbsp;
@@ -236,8 +236,7 @@ function displayCart(){
             <h4 class="foodItemsTotalTitle">
                 Food_Total
             </h4>
-            <h4 class="foodTotal">
-                &#8358_${cartCost}
+            <h4 class="foodTotal" id="totalprice"> &nbsp ${cartCost}
             </h4>
         `
     }

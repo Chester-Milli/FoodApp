@@ -99,11 +99,11 @@
 
                 <div>
                   <label for="deliveryType">Delivery Type</label>
-                  <select class="deliveryMethods" name="" id="">
+                  <select class="deliveryMethods" id="dtype">
                       <option value="--select--">--Select--</option>
-                      <option value="despatch">Tricycle</option>
-                      <option value="cab">Cab</option>
-                      <option value="Truck">Truck</option>
+                      <option value="700" id="tricycle">Tricycle</option>
+                      <option value="1200" id="cab">Cab</option>
+                      <option value="3000" id="truck">Truck</option>
                   </select> 
                 </div>
                 
@@ -114,11 +114,13 @@
   
               <!-- Hiden invoice //////////////////// -->
               <div class="invoice">
-                  <h3> Welcome <span class="nameInput"></span></h3> <hr>
+                  <h1> Welcome </h1> <h4 id="customernamediv"></span></h4> <hr>
       
                   <p>Invoice: <span class="invoiceNumber"></span></p>
+
+                  <p>Delivery Price: <span id="deliveryprice"></span></p>
       
-                  <p>Total: <span class="total"></span></p>
+                  <p>Total: <span style="font-size: 1.4rem;" id="total"></span></p>
                   
                   <button class="payFoodbtn closebtn" type="button">Close</button>
               </div>
