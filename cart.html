@@ -85,7 +85,7 @@
          </div>
 
          <div class="formHidden">
-          <form class="container paymentForm" action="">
+          <form class="containe paymentForm" action="">
             <div class="formPart">
               <div class="name">
                 <div class="label"><label for="name">Name</label></div>
@@ -100,17 +100,25 @@
                 <div>
                   <label for="deliveryType">Delivery Type</label>
                   <select class="deliveryMethods" id="dtype">
-                      <option value="--select--">--Select--</option>
+                      <option value="--select--" id="select">--Select--</option>
                       <option value="700" id="tricycle">Tricycle</option>
                       <option value="1200" id="cab">Cab</option>
                       <option value="3000" id="truck">Truck</option>
                   </select> 
+
+                  <!-- <div class="paymentbutton">
+                    <button class="payFoodbtn" id="proceedPayment" type="button">Proceed</button>
+                  </div> -->
                 </div>
                 
                 <div class="paymentbutton">
                   <button class="payFoodbtn" id="proceedPayment" type="button">Proceed</button>
                 </div>
             </div>
+
+            <!-- <div class="paymentbutton">
+              <button class="payFoodbtn" id="proceedPayment" type="button">Proceed</button>
+            </div> -->
   
               <!-- Hiden invoice //////////////////// -->
               <div class="invoice">

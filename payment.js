@@ -5,8 +5,15 @@ const proceedPayment = document.getElementById('proceedPayment');
 proceedPayment.addEventListener('click', () => {
     //Welcome details for nameinput and total price
     if(document.getElementById('userName').value.length == 0){
-    return
+        return document.getElementById('userName').style.border = '2px solid red'
     }
+
+    // This checks if the selected items/value is the 'select' option, if it is the 'select' option then it returns nothing
+    // const nonSelect = document.getElementById('select').input;
+    // if(dprice.length.value == 0){
+    //     return
+    // }
+    
     const name = document.getElementById('userName').value;
     document.getElementById('customernamediv').textContent = name;
 

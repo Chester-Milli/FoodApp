@@ -37,3 +37,18 @@
     text-decoration: none;
     transition: 650ms;
 }
+
+
+@media screen and (max-width:2000px) {
+    nav, main, footer{
+        max-width: 2000px;
+    }
+}
+
+
+
+@media screen and (max-width:280px) {
+    nav, main, footer{
+        min-width: 280px;
+}
+}

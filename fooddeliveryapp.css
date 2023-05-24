@@ -741,6 +741,13 @@ footer{
 
 
 
+@media screen and (max-width:2000px) {
+    nav, main, footer{
+        max-width: 2000px;
+    }
+}
+
+
 
 
 @media screen and (max-width:1200px) {
@@ -1027,6 +1034,11 @@ footer{
 
 
     /* Special Offer ////////////////////////////// */
+    .mySpecialOffer{
+        width: 100%;
+        box-shadow: none;
+    }
+
     .specialOffer{
         display: flex;
         flex-direction: column;
@@ -1180,8 +1192,8 @@ footer{
     }
 
     .specialOffer img{
-        height: 170px;
-        width: 170px;
+        height: 230px;
+        width: 230px;
     }
 
     .discount h1{
@@ -1270,5 +1282,8 @@ footer{
     /* Contact Us ///////////////////////////////// */
     .contactUsForm input, .contactUsForm textarea{
         width: 100%;
+    }
+        nav, main, footer{
+            min-width: 280px;
     }
 }
