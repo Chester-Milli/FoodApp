@@ -204,7 +204,7 @@ aside{
 
 
 .enjoyDeliciousMeal{
-    background: url('/Frontend/Frontend Milestone project/Images/spinach.png');
+    background: url('./Images/spinach.png');
     background-repeat: no-repeat;
     background-position: top-left;
 }
