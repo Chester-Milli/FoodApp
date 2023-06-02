@@ -79,12 +79,11 @@ menu>.eat-fresh{
 }
 
 menu>.eat-fresh>h1{
-    color: var(--mainColor);
     font-weight: 650;
 }
 
 menu>.eat-fresh span{
-    color: black;
+    color: var(--mainColor);
 }
 
 
@@ -103,8 +102,8 @@ menu>.eat-fresh span{
     /* box-shadow: 3px 3px 5px grey, 3px 3px 5px grey; */
 }
 
-.viewMenu .foodName>h4, .viewMenu .foodArticleFlex>p{
-    color: grey;
+.viewMenu .foodName h4, .viewMenu .foodArticleFlex>div{
+    /* color: grey; */
     font-weight: 650;
 }
 

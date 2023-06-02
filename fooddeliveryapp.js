@@ -12,21 +12,26 @@
 // Black & White background
 const background = document.querySelector('#background');
 
-const backgroundChanger = () => {
-    const background = document.body
-    background.classList.toggle('darkMode')
-    if (background.classList('darkMode')) {
-        background.innerHTML ="<i class='bx bxs-moon whiteBackground'></i>"
-    }else {
-        background.innerHTML ="<i class='bx bxs-sun'>"
-    }
-}
-
-background.addEventListener('click', backgroundChanger);
-
 background.addEventListener('click', ()=>{
+    const body = document.body
+    if (body.classList.contains('darkMode')) {
+        body.classList.remove('darkMode');
+        body.classList.add('whiteMode');
 
+        background.innerHTML = "<i class='bx bxs-moon whiteBackground'></i>";
+      } else {
+        body.classList.remove('whiteMode');
+        body.classList.add('darkMode');
+
+        background.innerHTML = "<i class='bx bxs-sun'>";
+      }
 })
+
+// background.addEventListener('click', backgroundChanger);
+
+// background.addEventListener('click', ()=>{
+
+// })
 
 
 
