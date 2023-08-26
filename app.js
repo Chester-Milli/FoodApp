@@ -1,3 +1,5 @@
+document.getElementById("user").innerHTML = `${localStorage.getItem("name") ? localStorage.getItem("name") : "Guest" }`
+
 const foodItems = [
     {
         incart: 0,

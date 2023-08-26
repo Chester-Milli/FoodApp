@@ -11,6 +11,7 @@
 
 // Black & White background
 const background = document.querySelector('#background');
+const footer = document.getElementsByTagName('footer')
 
 background.addEventListener('click', ()=>{
     const body = document.body
@@ -24,6 +25,7 @@ background.addEventListener('click', ()=>{
         body.classList.add('darkMode');
 
         background.innerHTML = "<i class='bx bxs-sun'>";
+        // document.getElementsByTagName('footer').style.display = 'none'
       }
 })
 
