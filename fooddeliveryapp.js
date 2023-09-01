@@ -1,3 +1,9 @@
+const token = localStorage.getItem('token');
+
+if(!token){
+  location.href = 'login.html'
+}
+
 // const category = [...new Set(foodItems.map((item)=>
 //     {return item}))]
     
@@ -60,3 +66,30 @@ hideFoodMenu.addEventListener('click', ()=>{
 })
 
 
+const arrowClick = document.getElementById('arrow-down-click');
+const dropdownMenu = document.getElementById('drop-down');
+const arrowUp = document.getElementById('arrow-up-click');
+
+arrowClick.addEventListener('click',()=>{
+  dropdownMenu.style.display = 'block';
+  arrowClick.style.visibility = 'hidden';
+  arrowUp.style.display = 'block'
+  arrowUp.style.marginTop = '-25px'
+})
+
+
+
+arrowUp.addEventListener('click', ()=>{
+  dropdownMenu.style.display = 'none';
+  arrowUp.style.display = 'none'
+  arrowClick.style.visibility = 'visible'
+})
+
+
+const navScroll = document.getElementById('nav-scroll');
+
+navScroll.addEventListener('scroll', ()=>{
+  const scrollEffect = document.getElementById('scroll-effect');
+
+  scrollEffect.style.position = 'fixed'
+})

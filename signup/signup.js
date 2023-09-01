@@ -19,7 +19,7 @@ const accountSuccess = document.getElementById('account-success')
 
 const url = "https://food-app-project-api.onrender.com"
 
-const signUpButton = document.getElementById("sign-up")
+const signUpButton = document.getElementById("sign-up-btn")
 
 
 
@@ -136,7 +136,7 @@ if(data.status === 'success'){
 
     localStorage.setItem("name", firstName.value);
 
-    //Account creation success
+    //Account-creation success message
 
         accountSuccess.style.color = "green"
         accountSuccess.innerHTML = "Sign Up Sucessful"

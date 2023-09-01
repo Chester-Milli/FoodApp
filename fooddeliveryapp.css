@@ -8,6 +8,7 @@
     --mainAlt: rgb(199, 50, 27);
     --secColor: rgb(86,141,51);
     --btnShape: 30px 30px 2px;
+    --white: white;
 }
 
 
@@ -30,6 +31,45 @@
 
 .logo>img{
     width: 80px;
+}
+
+.userLogin{
+    text-align: right;
+    background-color: var(--mainColor);
+    padding: 5px 10px 5px 0px;
+    color: var(--white);
+}
+
+.user{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#user{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.arrow-down-click{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.arrow-up-click{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#drop-down{
+    display: none;
+}
+
+#drop-down a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .items{
@@ -1298,7 +1338,7 @@ footer{
     .contactUsForm input, .contactUsForm textarea{
         width: 100%;
     }
-        nav, main, footer{
+        nav, main, footer, .userLogin{
             min-width: 280px;
     }
 }
